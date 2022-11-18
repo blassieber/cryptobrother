@@ -1,0 +1,194 @@
+/* reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* NAVEGADOR */
+
+
+h1{
+    color: whitesmoke;
+    background-color: rgb(158, 166, 243);
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+
+}
+
+
+    
+
+    
+
+ul{
+    list-style-type: none;
+    
+
+}
+
+li:hover{
+    transform: scale3d(1.5,1.5,1.5);
+}
+
+
+
+/* APARTADO INDEX */
+
+.ganancias{
+    color: rgb(241, 245, 247);
+}
+
+main .index{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "plataforma ganancias"
+    "plataforma ganancias-img";
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(111, 128, 175);
+    background-image:url(../img/915234.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+
+main .index .plataforma{
+    grid-area: plataforma;
+}
+
+main .index .ganancias{
+    grid-area: ganancias;
+}
+
+main .index .ganancias-img{
+    grid-area: ganancias-img;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(95, 95, 187);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+
+}
+
+/* APARTADO NOTICIAS */
+
+.noticia1{
+    background-color:rgb(164, 160, 201) ;
+
+}
+
+.noticia2{
+    background-color:rgb(164, 160, 201);
+}
+
+.noticia3{
+    background-color: rgb(164, 160, 201);
+}
+
+main .noticias{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+
+}
+
+main .noticias .noticia1{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    
+}
+
+main .noticias .noticia2{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+main .noticias .noticia3{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+
+
+/* APARTADO QUIENES SOMOS*/
+
+.quienessomos1{
+    text-align: center;
+    background-color:rgb(164, 160, 201) ;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 40px;
+    height: 100vh;
+
+}
+
+
+/* APARTADO CONTACTO */
+
+.contenedor2{
+    height: 100vh;
+    background-color: rgb(164, 160, 201);
+}
+
+
+.presentacion{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(164, 160, 201) ;
+    padding: 10px;
+}
+
+
+
+/* APARTADO NUESTROS OBJETIVOS A FUTURO */
+
+.copytrading h2{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px rgb(77, 71, 71);
+    padding-top: 10px;
+}
+
+.copytrading h3{
+    margin-left: 10px;
+    padding-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.contenedor{
+    height: 100vh;
+    background-color:rgb(164, 160, 201) ;
+}
+
+
+/* ADAPTACION MOBILE INDEX*/
+@media screen and (max-width:320px) {
+    .main-index{
+        display: grid;
+        grid-template-columns: 100vh;
+        grid-template-rows: 1fr 1fr;
+    }
+}
